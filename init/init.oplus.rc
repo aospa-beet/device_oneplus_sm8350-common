@@ -79,7 +79,7 @@ service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provid
     group audio camera input drmrpc oem_2907
     ioprio rt 4
     capabilities SYS_NICE
-    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/foreground/tasks
+    task_profiles CameraServiceCapacity HighPerformance
 
 service oplus-post-boot /vendor/bin/sh /vendor/bin/init.oplus.post_boot.sh
     class core
