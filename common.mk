@@ -292,7 +292,7 @@ $(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oplus
+    vendor.qti.hardware.vibrator.service.oplus_sm8350
 
 # VNDK
 NEED_AIDL_NDK_PLATFORM_BACKEND := true
