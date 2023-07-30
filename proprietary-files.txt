@@ -133,8 +133,6 @@ vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Charging
-vendor/bin/init.qti.chg_policy.sh
-vendor/etc/charger_fstab.qti
 vendor/etc/charger_fw_fstab.qti
 
 # Config Store
