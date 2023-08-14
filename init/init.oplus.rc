@@ -1,0 +1,75 @@
+# Copyright (C) 2023 Paranoid Android
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+on boot
+    chown system system /dev/oplus_display
+    chown system system /sys/kernel/oplus_display/dimlayer_bl_en
+    chown system system /sys/kernel/oplus_display/dynamic_osc_clock
+    chown system system /sys/kernel/oplus_display/hbm
+    chown system system /sys/kernel/oplus_display/notify_fppress
+    chown system system /sys/kernel/oplus_display/panel_serial_number
+    chown system system /sys/kernel/oplus_display/power_status
+
+    # Sensors
+    chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
+
+on fs
+    # Trigger touchpanel firmware update
+    write /proc/touchpanel/tp_fw_update 0
+
+on property:ro.boot.prjname=*
+    # Display
+    setprop ro.separate.soft ${ro.boot.prjname}
+
+# On the NA variants we want to restrict the SIM
+# configuration to SSSS.
+on property:ro.boot.rf_version=12
+    setprop persist.radio.multisim.config ssss
+
+on property:ro.boot.rf_version=22
+    setprop persist.radio.multisim.config ssss
+
+on property:sys.boot_completed=1
+    start oplus-post-boot
+
+on property:vendor.post_boot.parsed=1
+    # IRQ Tuning
+    # IRQ 243: msm_drm0
+    # IRQ 222: kgsl_3d0_irq
+    write /proc/irq/243/smp_affinity_list 2
+    write /proc/irq/240/smp_affinity_list 1
+
+service oplus_sensor_fb /odm/bin/oplus_sensor_fb
+    user system
+    group system
+    class late_start
+    oneshot
+
+service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
+    override
+    interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
+    interface vendor.qti.hardware.camera.postproc@1.0::IPostProcService camerapostprocservice
+    class hal
+    user cameraserver
+    group audio camera input drmrpc oem_2907
+    ioprio rt 4
+    capabilities SYS_NICE
+    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/foreground/tasks
+
+service oplus-post-boot /vendor/bin/sh /vendor/bin/init.oplus.post_boot.sh
+    class core
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot

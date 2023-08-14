@@ -1,4 +1,4 @@
-<!-- Copyright (C) 2021-2022 Paranoid Android
+<!-- Copyright (C) 2021-2023 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,14 +17,6 @@
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.camera.cameraextension</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICameraExtensionService</name>
-            <instance>cameraextensionservice</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.oplus.hardware.cameraextension</name>
         <version>1.0</version>
         <interface>
             <name>ICameraExtensionService</name>
