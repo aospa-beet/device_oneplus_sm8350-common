@@ -46,6 +46,17 @@ void vendor_load_properties() {
         case 20821: // IN
                OverrideProperty("ro.product.product.model", "MT2111");
             break;
+	//Realme GT ME
+	case 21603: // CN
+               OverrideProperty("ro.product.product.model", "RMX3361");
+               OverrideProperty("ro.product.product.device", "RE507C");
+            break;
+        case 21675: // IN
+               OverrideProperty("ro.product.product.model", "RMX3360");
+            break;
+        case 21676: // EU
+               OverrideProperty("ro.product.product.model", "RMX3363");
+            break;
         default:
             LOG(ERROR) << "Unexpected project name: " << prjname;
     }
