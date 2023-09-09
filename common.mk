@@ -46,7 +46,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.config.vc_call_vol_steps=9 \
-    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
+    vendor.audio.dolby.ds2.enabled=false
+    vendor.audio.dolby.ds2.hardbypass=false
+    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
+    ro.vendor.dolby.model=PAFM00 \
+    ro.vendor.dolby.device=OP46C3 \
+    ro.vendor.dolby.manufacturer=OPLUS \
+    ro.vendor.dolby.brand=OPLUS
 
 PRODUCT_ODM_PROPERTIES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
@@ -177,6 +184,9 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
+# Media
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml
 
 # NFC
 PRODUCT_PACKAGES += \

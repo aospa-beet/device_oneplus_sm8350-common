@@ -58,6 +58,9 @@ function blob_fixup() {
         vendor/lib/libgui1_vendor.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
+        odm/etc/dolby/multimedia_dolby_dax_default.xml)
+            sed -i "/volume-leveler-enable/ s/true/false/g" "${2}"
+            ;;
     esac
 }
 
