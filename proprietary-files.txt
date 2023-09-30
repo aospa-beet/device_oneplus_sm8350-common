@@ -1,5 +1,6 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0.
+## from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0. Sections labeled with 'OOS' are
+## on latest OxygenOS which is MT2111_13.1.0.592(EX01) at present.
 
 # ADSPRPC
 vendor/bin/adsprpcd
@@ -19,6 +20,128 @@ vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
+
+# Audio - OOS
+odm/etc/acdbdata/Bluetooth_cal.acdb|9eca5560063d139d3b3defbf892890b315d1e1c7
+odm/etc/acdbdata/General_cal.acdb|1a4b4c13d043dde76bc1c347a544f9511070c996
+odm/etc/acdbdata/Global_cal.acdb|7031dc2a8d0c9e09f5d1b7ed496e21969e5f2b03
+odm/etc/acdbdata/Handset_cal.acdb|e181afce1f39cb6b89db3fd4680aa0e0cbaa116f
+odm/etc/acdbdata/Hdmi_cal.acdb|ca7c607a5fe8c9ae369377fdba68ad66eb4e5fc2
+odm/etc/acdbdata/Headset_cal.acdb|281f65d4482735c1675011989d8da69648fd2d1e
+odm/etc/acdbdata/Speaker_cal.acdb|ce890bc11aeb389fa59dadf54eb14904ccd26190
+odm/firmware/tfa98xx.cnt|196901407090376497cb057443add8457ebe8e14
+odm/lib/libaudioEngineerTest.so|9076a2f1b36f84893182fbf7f449fc74088a793e
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd|247fa73e3b22ac1d8b98a601a9583bfd1e113879
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd|5271ce640ce35900690f8adf7b57aa53ef560e13
+vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd|7d6596a96b602d413857c35bb65b27a115e894b2
+vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd|4160e57be26f1ca99b857276be74c40294a26665
+vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd|b1d2f43214d8509cf5f3ca20092c7ca475be684e
+vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd|84537b77f8bdb72e23420f417c2d0a24da7a71a0
+vendor/etc/acdbdata/adsp_avs_config.acdb|e7aed8088e8c6dccacff231a1c1fe83936b15cd0
+vendor/lib/hw/audio.primary.lahaina.so|2c36cf88a8ec53ec34dcf4cf2b752284db4c9e7b
+vendor/lib/hw/sound_trigger.primary.lahaina.so|20a5f682585af83273152d80186cf01bc09eec55
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so|f357ce20b069feac7e8c87f3615d9201c00aff7b
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so|1f568f739f627889ae24f1fc22e62ebb2d264eb5
+vendor/lib/soundfx/libasphere.so|a742e8196f321571132113e0052b9c947cb9d37a
+vendor/lib/soundfx/libqcbassboost.so|75266de6e9d0eeca3cc40451e144889f21e733f9
+vendor/lib/soundfx/libqcreverb.so|74ab2e295efc544d078378c6f73280d454901707
+vendor/lib/soundfx/libqcvirt.so|2d4f333804fb8a9b2b2d748473f9c531accbb399
+vendor/lib/soundfx/libshoebox.so|220745509dcc7874bc253d4f892d7ee0cd52d7ca
+vendor/lib/libAlacSwDec.so|e81cc0a46cdf8dc064d4516538d0f0a962f2a952
+vendor/lib/libApeSwDec.so|3161432541e8a376c5d2d36c5dcb221ddf9068c6
+vendor/lib/libFlacSwDec.so|e757ccadf709aff93e51c12a8cd0ecb8c77803b7
+vendor/lib/libMpeghSwEnc.so|0e3ad816f4d969a10fdb8ba9d0ad3911356f7f45
+vendor/lib/libOmxAacDec.so|ad6cec2492c69861af798a51413910cc2440902e
+vendor/lib/libOmxAlacDec.so|9d02d3604f9b4dbea18472934d69ecd77077fb97
+vendor/lib/libOmxAlacDecSw.so|84d43b01974fd8f032f38385b941a6f90d957948
+vendor/lib/libOmxAmrDec.so|c380207554b856e0693b2a20c696b996320e843d
+vendor/lib/libOmxAmrwbplusDec.so|ec7283f6e4ee0e950aab15b4ba08beaeb3838076
+vendor/lib/libOmxApeDec.so|cf9ae85b1b13d357595bfbf8c0d6aff4d747bd17
+vendor/lib/libOmxApeDecSw.so|fe35dbdf1fd71cce1226a06ffd3b0e9187e45ddb
+vendor/lib/libOmxDsdDec.so|7c863f656875cc090e4c81b2e26c9f20355d50ef
+vendor/lib/libOmxEvrcDec.so|54e87deb1e2224411007325866ebc8a4542c064d
+vendor/lib/libOmxG711Dec.so|d658bccb368878ac8738ff559806dc6aef0df6db
+vendor/lib/libOmxMpeghDecSw.so|460f2769365c31b08b8e3cb72a2c00e5d1a3f089
+vendor/lib/libOmxMpeghEncSw.so|261e1157025689f11ba865bca7f00c9c6267014f
+vendor/lib/libOmxQcelp13Dec.so|bcac6ec5c50055fe2b19e0cf9ff86a3a8e262265
+vendor/lib/libOmxWmaDec.so|f97abca11925f7f1486055cafd10e34cd7f5cf27
+vendor/lib/liba2dpoffload.so|1a2adb389988eec5c0d110b8e2e82ce4e2a78807
+vendor/lib/libacdb-fts.so|db88d3aa5564db743c3b85a01aac7028967514be
+vendor/lib/libacdbloader.so|288d084cd196dc11fda67ed48c8ecc79033e7090
+vendor/lib/libacdbrtac.so|665ef08b1a668987bff90643327c972d22e4297d
+vendor/lib/libadiertac.so|ffdb9404d72e62b7794bb9b3fd55deb21a5e4925
+vendor/lib/libadm.so|ceb6b3d0ba0d41bb5d923fc4ff4699fdf9b0003f
+vendor/lib/libadpcmdec.so|99facde4e653639edd67d4f48828aa5b74f0ffb6
+vendor/lib/libaudcal.so|bfe5409b7984af53b116f7b217292d4e83d0db41
+vendor/lib/libaudio_log_utils.so|37ca8e156d7f7e068db96211111a492d205f6db1
+vendor/lib/libaudioalsa.so|486cde43c2d135e0cceb862126b56ef0647d3a71
+vendor/lib/libaudioconfigstore.so|1b53f032ae43dd335ada7755642cb62864890165
+vendor/lib/libaudioparsers.so|62449b99fcd1dafaa0575cd9cf7bf73596769eb5
+vendor/lib/libcapiv2svacnn.so|a2219c156bb4978ae8444120417ca1f34e35504a
+vendor/lib/libcapiv2svarnn.so|165509096605c4afd585762a2f6e467f55954a23
+vendor/lib/libcapiv2vop.so|19979321e66a3b01d5d51ab6a517530c8c4c05af
+vendor/lib/libdrc.so|e0a487a5593ae44546f321d2e9341f8eb1d24884
+vendor/lib/libdsd2pcm.so|64d91a96068049b46710e1670c8db44868301db0
+vendor/lib/libextcamera_client.so|0f011ab1314466e296d81227280c1a6b3371c271
+vendor/lib/libgcs-calwrapper.so|5d53c3423598ff838370e9d69ab0f26fe9141879
+vendor/lib/libgcs-ipc.so|7f79e3683ed808ae5e67029bb6542b14fa6a86a6
+vendor/lib/libgcs-osal.so|9ac399fbee4e73561c0a3f397fe6ffdc9c42892c
+vendor/lib/libgcs.so|3d4db7d5262064846a27b9169fa6d66a78a2c634
+vendor/lib/libgui1_vendor.so|0072e29818f05e190314fae459294c2111089eff
+vendor/lib/libhdmipassthru.so|4a0088f6ad23a830dc121e2bb4fb548f01efda8b
+vendor/lib/liblistensoundmodel2.so|25b62bedc02e5584706c410b76e4f1874dd4ea46
+vendor/lib/libmulawdec.so|f72724da37b96a8cdce1a9e62d935c593d222096
+vendor/lib/libqtigef.so|c7d588a80c3aac52b160db6ded1528bb8b8fd7bd
+vendor/lib/libsmwrapper.so|6d7093844a4e1091ee4bfe617ed22e5496544232
+vendor/lib/libssrec.so|a68dbd0a1466c04a21de2829a9892f759340d0a2
+vendor/lib/libstagefright_soft_qtiflacdec.so|884a7db483e6c7cfa19c87d7cdb9139366d037e6
+vendor/lib/libsurround_3mic_proc.so|3c970233b858df5c048941dd931a6b5212767afa
+vendor/lib/vendor.oplus.hardware.extcamera@1.0.so|837df09bb282bd18c09bed5196d51ea0b9d0c954
+vendor/lib/vendor.qti.voiceprint@1.0.so|5325739853aef4d9b7a752cec9e607e4f7e86ebf
+vendor/lib64/hw/sound_trigger.primary.lahaina.so|b697c8db377b74e8359c8acb23aee662af2a4254
+vendor/lib64/soundfx/libasphere.so|041a144b5bc745f6eebbd1423e61af5ced581bbd
+vendor/lib64/soundfx/libqcbassboost.so|708756550c0fbf42c0e96fba2f82588d69d26624
+vendor/lib64/soundfx/libqcreverb.so|b05c0ce2831aeb777a4b498408b32c63d81e797a
+vendor/lib64/soundfx/libqcvirt.so|69a2e48c588a3cc388cec47033c629858b64b470
+vendor/lib64/soundfx/libshoebox.so|78b553faaa91db53ab5a69c3bbcfc1b1bd27bb95
+vendor/lib64/libAlacSwDec.so|0ba83b57e00ebb223df9c09ba540056e1a6c12e7
+vendor/lib64/libApeSwDec.so|4ba585e579961ca1f6780b54da4d3415f5202348
+vendor/lib64/libFlacSwDec.so|4de4dc2e2831bc8b87dc0e8a86e89bac0e8b9be5
+vendor/lib64/libMpeghSwEnc.so|85dfeac5220f6b064d674a4e669d59a694072077
+vendor/lib64/libOmxAacDec.so|0b01553f4f1cc16a25c5e2a949611e463f2f1967
+vendor/lib64/libOmxAlacDec.so|0f3b139ef3acdbd1f669f1efc9a970559c5793e0
+vendor/lib64/libOmxAlacDecSw.so|e60e784a5ac8357d8cad0b527ee09372848f9601
+vendor/lib64/libOmxAmrDec.so|794b2e029fece8f8d162e51dc185ff40165d31cf
+vendor/lib64/libOmxAmrwbplusDec.so|2545975ed3eb6d066cb1abc9a2b7b63ae354cff6
+vendor/lib64/libOmxApeDec.so|5f637c8f087eb23eaf275031706bf003166c6747
+vendor/lib64/libOmxApeDecSw.so|294b9f52407f8b01ec619e800e25e6ec335b94fc
+vendor/lib64/libOmxEvrcDec.so|9965602ec380d189a6c6d41cfe7d2b6ad6fa2214
+vendor/lib64/libOmxG711Dec.so|ed9de00cac880b9b916f2c1b398b57f396a2d6e9
+vendor/lib64/libOmxMpeghEncSw.so|5862e08cc98dd065df887d12df7832c643fe37e0
+vendor/lib64/libOmxQcelp13Dec.so|e427ab2c04f41197c940ddcb416bc15152e993e4
+vendor/lib64/libOmxWmaDec.so|ce2cdb6fd728962afbb00edf4ab2a013b38a7ec0
+vendor/lib64/libacdb-fts.so|bea5c6a2dd56b37a557d0def22fe3098ade5600c
+vendor/lib64/libacdbloader.so|e9e54e4c64c30a8db522be8cf2ba55ebfe6eed45
+vendor/lib64/libacdbrtac.so|7af0a633ed43d453482270ddf21139a89c7d2c3b
+vendor/lib64/libadiertac.so|2e5e7f5cd8a4911cfab9f00dfe4bcd9cedd62a2c
+vendor/lib64/libaudcal.so|a36118ced0d1daa64acd2df0f6fcf21bd64b96aa
+vendor/lib64/libaudio_log_utils.so|5283cab9411295a50619ee191bb2f12cad01d407
+vendor/lib64/libaudioalsa.so|56ac1fb042b640f27c76d2bf32c38de1e8b0c003
+vendor/lib64/libaudioconfigstore.so|6d344713fbbeac43f01f6bac55856761d9b1c4c6
+vendor/lib64/libaudioparsers.so|1c0f82cdb5c934ecd3833e0a3470ee7cac6747b5
+vendor/lib64/libcapiv2svacnn.so|75e7191bb291f18f909e19092052a66f942b3fba
+vendor/lib64/libcapiv2svarnn.so|c2030da244d21e6fa52102699bfc48acdaf2a41a
+vendor/lib64/libcapiv2vop.so|9775a816f5c05b1a09e6bdbcc57fde765ee63e7c
+vendor/lib64/libgcs-calwrapper.so|21da1d8ef618c9af28b577ea90fd24e66658c0d7
+vendor/lib64/libgcs-ipc.so|98a4b5f9385056deaa980ada516af7a51048dd4f
+vendor/lib64/libgcs-osal.so|608cb17ee198f331ab175c52cb852754d695138c
+vendor/lib64/libgcs.so|fefbf2445b5289a6abb83ec2fa8443094934791e
+vendor/lib64/libhdmipassthru.so|ce625ea84e64bd199ea7e3e6a16f33c0dcc86e8d
+vendor/lib64/liblistensoundmodel2.so|6c66a3fdb2d6ddbceb274cf5b77adaaf9099fb60
+vendor/lib64/libmulawdec.so|fcfd2175fbcf802d5282d0e330c731a7dd3cd3f5
+vendor/lib64/libqtigef.so|09fb25411b4767ab2f7eebdccd7cc7fd9a85feee
+vendor/lib64/libstagefright_soft_qtiflacdec.so|de8d1337e5d4e21ab3fadce6df6d5cd4e53da8c7
+vendor/lib64/vendor.qti.voiceprint@1.0.so|065739e8d05515fa4c4aea3d8f3c66beaa3b7a9a
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -131,6 +254,30 @@ vendor/lib64/libcvp_util.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
+# CVP - OOS
+vendor/firmware/evass.b00|2595bce1132e8f9bf1832d6aea7c067561095481
+vendor/firmware/evass.b01|9cb5a4a5a287e03198fdf73e91e7a9e3a3965070
+vendor/firmware/evass.b02|a7966bf9596be7ab4e9b99156695aeaa34d4ef0a
+vendor/firmware/evass.b03|3783589ec15b7d583e2f845a4b0b86d0826b2fb1
+vendor/firmware/evass.b04|86a5ed4d22759036806d9321f8e509628f64c5b6
+vendor/firmware/evass.b05|9878c2584b5147b94c9bc466c95677a6dbc023db
+vendor/firmware/evass.b06|e19854e03b52cc67d7db620f54609b66d1b85f54
+vendor/firmware/evass.b07|0b403b94f400e8f76ac5f5f18f6957318ec2a582
+vendor/firmware/evass.b08|86a5ed4d22759036806d9321f8e509628f64c5b6
+vendor/firmware/evass.b09|8bda099219fa74368be45c505cf722c09f420952
+vendor/firmware/evass.b10|2d33a5275570202d46ffe6787a1e6b9ebae8458a
+vendor/firmware/evass.b11|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b12|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b13|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b14|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b15|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b17|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b18|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b19|1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d
+vendor/firmware/evass.mbn|5828bbb5e13efb83993f1425c4616a3487ef875c
+vendor/firmware/evass.mdt|63eac642e06d703751ce8e6c4446f50f5e55c75a
+
 # Charging
 vendor/etc/charger_fw_fstab.qti
 
@@ -206,6 +353,10 @@ vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 -vendor/lib/libfastcvopt.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
+
+# Performance - OOS
+odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so|171b0e91d3af3b12e2c0ce7cba4eda2ca589d6c4
+odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so|8c002fbbebfac87710a1eed245a188437a5a720f
 
 # GPS
 vendor/bin/garden_app
@@ -527,6 +678,10 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 
+# RemoteFS - OOS
+vendor/bin/rmt_storage|bd7eb2864e49d7aa0b8fbd7e0839707e3f2ddf60
+vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
+
 # SCVE
 vendor/lib64/libscveCommon.so
 vendor/lib64/libscveCommon_stub.so
@@ -543,6 +698,77 @@ vendor/etc/ssg/tz_whitelist.json
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
+
+# Sensors - OOS
+odm/bin/oplus_sensor_fb|0a791739921434ee29b4a5db7fc09a95e92c091e
+odm/lib64/liboplus_service.so|f0ac5ac4194735a5cfdc32e3f32e89d1524503b3
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|af509889d3776725e3a5e958d950d80f1c612663
+vendor/bin/init.qcom.sensors.sh|454c6de8c65b9ad1c41f063544871a4ba0665689
+vendor/bin/sensors.qti|8320689ea68c11d935184fdb4f301f192a41563e
+vendor/bin/sscrpcd|10235af6a79a9315d2a7811d8e7e947436e96f53
+vendor/etc/init/init.vendor.sensors.rc|f1382fe6f3cf0dbb1a2673716d3c087757695835
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc|449c88778d880c0d47cc4d651fc60c4c424c1a3f
+vendor/etc/init/vendor.sensors.qti.rc|f34fc966af816b50f10ae7520b33863961a14478
+vendor/etc/init/vendor.sensors.sscrpcd.rc|df52901f1ad0fbc97d6070e28896a6be40154814
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml|1da4413d851427006472e4251cd20d397052d41f
+vendor/etc/sensors/config/lahaina_default_sensors.json|5806b54e9cdd07ea78fe0755c219b6812de6c42b
+vendor/etc/sensors/config/lahaina_dynamic_sensors.json|80716e11fb6c31abff0728100dadd4206750ad78
+vendor/etc/sensors/config/lahaina_irq.json|be5ac7dfe059964bc0c1767576769f936d7552b5
+vendor/etc/sensors/config/lahaina_power_0.json|cd682b60147c2b7d4f9a687f3a55d4ec04fc9107
+vendor/etc/sensors/config/sns_amd.json|7be0e69402d5c834496f62e2a52c67a83211b88e
+vendor/etc/sensors/config/sns_amd_sw_disabled.json|71ec2926ec9ec265e4e857958a4809c1c900db74
+vendor/etc/sensors/config/sns_amd_sw_enabled.json|622cf40c88a776c59e5870c0008465b50e120fd7
+vendor/etc/sensors/config/sns_aont.json|945f447fd40dd4cbea5c9a564461a6363ce85947
+vendor/etc/sensors/config/sns_basic_gestures.json|1365b71892cec9153f759f1566f8dffd249f1ae5
+vendor/etc/sensors/config/sns_bring_to_ear.json|cbeca962ee4edc5d67b1194c162f9f947ea0ef87
+vendor/etc/sensors/config/sns_ccd.json|8b5997b628588726980b11f509552c34fa385fd4
+vendor/etc/sensors/config/sns_ccd_v2_walk.json|c955ead01f15bba9ac82d95259d64d84520b1148
+vendor/etc/sensors/config/sns_ccd_v3_1_walk.json|c1dae3555a46534fb9b2dc1d7c92a3b34b75da52
+vendor/etc/sensors/config/sns_ccd_v3_walk.json|c74f7ff64db3c9ff8464c7c2d642622a888cd3f8
+vendor/etc/sensors/config/sns_cm.json|daecfabd8baef4f99290f1bfb746c65c3bc2ff48
+vendor/etc/sensors/config/sns_dae.json|ae2b208d50cd798ac170839c07ba38a5c062f304
+vendor/etc/sensors/config/sns_device_orient.json|2a5844c87eac8dffdbf966722a20b7683204094a
+vendor/etc/sensors/config/sns_diag_filter.json|bae0965a28e75fefa50c7f802fb3aa0cc470df28
+vendor/etc/sensors/config/sns_direct_channel.json|2b9ef866720aa1ce84faeb4d0f655a662129d89d
+vendor/etc/sensors/config/sns_distance_bound.json|1a02ad6a6749b51d74e0f4070fd27935451cac92
+vendor/etc/sensors/config/sns_dpc.json|d77d9ecca8f3e0f40eddeb5092becce809009fa5
+vendor/etc/sensors/config/sns_facing.json|fc9f01e601400a022142f13a3e19fb33c422170f
+vendor/etc/sensors/config/sns_fmv.json|f08ceb8563e7abfeaf9b7936b6b2af15fd24164e
+vendor/etc/sensors/config/sns_fmv_legacy.json|85296a8e389c96361552e7dbd96bcb9f9158f838
+vendor/etc/sensors/config/sns_geomag_rv.json|0748964a56eebc29236a4b7944e447c707410ace
+vendor/etc/sensors/config/sns_gyro_cal.json|6ce26f84390396b119a98f371f2471d3b49e8c75
+vendor/etc/sensors/config/sns_heart_rate.json|255b84f68c98747e9a5f83e9d60c0af14cf04ab2
+vendor/etc/sensors/config/sns_mag_cal.json|2070c9e3cddad5ecb9eb81e30ad378051660ac7a
+vendor/etc/sensors/config/sns_mag_cal_legacy.json|8abf8b8632bf48bf49ecb4da451c75536f553458
+vendor/etc/sensors/config/sns_multishake.json|0eaf91c7ecef108039545b531af3d4702aa89f75
+vendor/etc/sensors/config/sns_pedometer.json|a692c29e9dfa1eae44e423c25d447c61e60cf026
+vendor/etc/sensors/config/sns_rmd.json|4523bad52bf1b9613d8a89938dbad6d8a52ba9f2
+vendor/etc/sensors/config/sns_rotv.json|22b41ce6e9b8c07073f06bc933381532e5503f57
+vendor/etc/sensors/config/sns_smd.json|9b58f8c44776c45cf94860cfe1077c2eaf758eb3
+vendor/etc/sensors/config/sns_tilt.json|2fd5e20746a80f957e7111d95a8418f2aa6c70c5
+vendor/etc/sensors/config/sns_tilt_sw_disabled.json|1993aad43c7fdab15b03388a3d5ffb1c4ad7108e
+vendor/etc/sensors/config/sns_tilt_sw_enabled.json|122eaf6ede0ea0bbfa9e6c083bdc6c8f6f825605
+vendor/etc/sensors/config/sns_tilt_to_wake.json|667b18162988656e46b0b67d4f1b3cc2fd855e3e
+vendor/etc/sensors/config/sns_wrist_pedo.json|3f6298f23c182c16585dbef20c419ce5353842b5
+vendor/etc/sensors/sns_reg_config|8e1e7175533177fe45b89c4ba572a861e262467f
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so|035ad0ddaff6b84b28f49f7fb97669fb99b16316
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib64/libsensorcal.so|9df04d72592e271efb04cfca81f16b137b539411
+vendor/lib64/libsensorslog.so|b1b32af08e41b47795dda9aae4a3278379f006e0
+vendor/lib64/libsns_api.so|f380f5bebc61cdadc96b19531c0615c837d94387
+vendor/lib64/libsns_device_mode_stub.so|ed50b686a49aac5572b12fad8207134200d4290d
+vendor/lib64/libsns_fastRPC_util.so|2f8a0b4360d6d1ba8652194e3ab12f1f912642a3
+vendor/lib64/libsns_low_lat_stream_stub.so|4e1f324d9e14febb9de4c64dc62a9c4efc0d634a
+vendor/lib64/libsns_registry_skel.so|76ad9c963b1670bba71bb20b74314bfa278b179a
+vendor/lib64/libsnsapi.so|937342787026486d8f3a67282d28d3ce6d6eeb27
+vendor/lib64/libsnsdiaglog.so|7c03bf53d874208be0a915ce3d87e367fc04f715
+vendor/lib64/libssc.so|ef11bf29faacbd322becbd46a62024df36d344a5
+vendor/lib64/libssc_default_listener.so|da9e3d83340a83b42554b738d8a72b0350f600d7
+vendor/lib64/sensors.ssc.so|3eabddf916eece92fcc7c4487347c1bd05e15029
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|7484c4f178837ec83a96c8e390716cde655e231b
 
 # SecureMSM (EID)
 vendor/bin/hw/vendor.qti.hardware.eid@1.0-service
@@ -623,6 +849,58 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
+# Touch - OOS
+odm/firmware/tp/19815/FW_S3908_SAMSUNG.img|aff80e47bd5361baf8047af516588a8619c8a190
+odm/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img|5b26351920d807cffc9c46ddd535f38db35674ab
+odm/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img|39306ec5386a394e54711c94457f643e7e957a17
+odm/firmware/tp/19825/FW_S6SY792_SAMSUNG.bin|99aa5f4bcc31d1226945e089f6f637e047c09c0b
+odm/firmware/tp/19825/FW_S6SY792_SAMSUNG_FAE.bin|0fc25cbe877faf37517d62194b98222627523c53
+odm/firmware/tp/19825/LIMIT_S6SY792_SAMSUNG.img|1ac1c7fdfd9a41097c6fb9deb2b1f092c6a241cd
+odm/firmware/tp/20031/FW_S3908_SAMSUNG.img|2d91b359a54eb4cc15aef8fded93d8706f331b32
+odm/firmware/tp/20031/FW_S3908_SAMSUNG_FAE.img|743f19b10b50800d06c2491cfba8bd85bf9a92c6
+odm/firmware/tp/20031/LIMIT_S3908_SAMSUNG.img|f7174a9121fc0bd1411cfbc36cc5a823851d86a2
+odm/firmware/tp/20085/FW_S3908_BOE.img|d7d1ec260d057a275a8d42b110f6054c4d957eba
+odm/firmware/tp/20085/FW_S3908_BOE_FAE.img|88e52b95c713e15712ad23fffebff61776b31805
+odm/firmware/tp/20085/FW_ST80Y_SAMSUNG.img|3a540fe7cc89ceacb213a35dfe7ed120778334fb
+odm/firmware/tp/20085/FW_ST80Y_SAMSUNG_FAE.img|aa53f0c883cc5205785a1832b1f0604447a48c71
+odm/firmware/tp/20085/LIMIT_S3908_BOE.img|b618d441974fbdd1d5404bd23c02e59279550268
+odm/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG.img|9b9b3380b863fee1f2e516c0ed9dd99e206bdcf6
+odm/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG_AGING.img|f20a52b2848026f880d2722f9d56140f6bf2b5b8
+odm/firmware/tp/20627/FW_FT3518_SAMSUNG.img|464832208e40d36677e0730c9361fda4bc3a7abe
+odm/firmware/tp/20627/FW_FT3518_SAMSUNG_FAE.img|63c1a78dd3e00e9c2689380dde80bb83c80d1de7
+odm/firmware/tp/20627/LIMIT_FT3518_SAMSUNG.img|7a6b6d58bd37435d2dc68459ffc65dd2b4c523b4
+odm/firmware/tp/20659/FW_S6SY792_SAMSUNG.bin|66606072d1a097f5949cf8aec0babca348d0dc2d
+odm/firmware/tp/20659/FW_S6SY792_SAMSUNG_FAE.bin|2ff8a48fb0ad648781b73294f8c949c354a0d00e
+odm/firmware/tp/20659/LIMIT_S6SY792_SAMSUNG.img|1ac1c7fdfd9a41097c6fb9deb2b1f092c6a241cd
+odm/firmware/tp/20820/FW_S3908_SAMSUNG.img|be74317ff22799a72ca62cdc8d30914a6dbe4772
+odm/firmware/tp/20820/FW_S3908_SAMSUNG_FAE.img|1a968e86046a8230524714ebdd1576540eb1c76c
+odm/firmware/tp/20820/LIMIT_S3908_SAMSUNG.img|26ad8547ea95b97f1a3dd6503212bfee20412fe2
+odm/firmware/tp/21005/FW_S3908_BOE.img|8ed2d76356c516e0834de363137d9375530f2303
+odm/firmware/tp/21005/FW_S3908_BOE_FAE.img|e4b06f978ef3c3fdad47061cc5020330568a1df5
+odm/firmware/tp/21005/FW_S3908_SAMSUNG.img|af8c7768fe8d568ede92784e4f24dd9cb7e3fc84
+odm/firmware/tp/21005/FW_S3908_SAMSUNG_FAE.img|14aaf7749aa309674d4736abbdcc834a1fb4beff
+odm/firmware/tp/21005/LIMIT_S3908_BOE.img|483fb653ccfc8fd6098988af65ae2088f48488d4
+odm/firmware/tp/21005/LIMIT_S3908_BOE_AGING.img|50d5728f841581d567068f49604bbae36209ec3e
+odm/firmware/tp/21005/LIMIT_S3908_SAMSUNG.img|483fb653ccfc8fd6098988af65ae2088f48488d4
+odm/firmware/tp/21005/LIMIT_S3908_SAMSUNG_AGING.img|50d5728f841581d567068f49604bbae36209ec3e
+odm/firmware/tp/21031/FW_FT3518_SAMSUNG.img|02378e3885dc1dc979b023861a69f5b7bd00078a
+odm/firmware/tp/21031/FW_FT3518_SAMSUNG_FAE.img|16753332bcf317203b3d282293be213081577e49
+odm/firmware/tp/21031/LIMIT_FT3518_SAMSUNG.img|9afead3861b2e7b53c0bf492e0840e43862ba154
+odm/firmware/tp/21051/FW_S3908_SAMSUNG.img|24fb73541e156a6ed979d4f2c218033282df8c60
+odm/firmware/tp/21051/FW_S3908_SAMSUNG_FAE.img|743f19b10b50800d06c2491cfba8bd85bf9a92c6
+odm/firmware/tp/21051/LIMIT_S3908_SAMSUNG.img|f7174a9121fc0bd1411cfbc36cc5a823851d86a2
+odm/firmware/tp/21075/FW_NF_ILI7807S_BOE_FAE.img|9be57829d1a952a5c72eaa1f4905c712582c05fb
+odm/firmware/tp/21075/FW_NF_ILI7807S_DSJM.img|066cadfa3f628f7b1af83a1e526e5605b15b304d
+odm/firmware/tp/21075/FW_NF_ILI7807S_DSJM_FAE.img|f0f4a570c9fb2699508d7da23654af7d1fd81268
+odm/firmware/tp/21075/LIMIT_NF_ILI7807S_BOE.img|0cc8faea7eb01580e7f6a6d277c071814b15f950
+odm/firmware/tp/21075/LIMIT_NF_ILI7807S_DSJM.img|54bbd4afd7fcad642afa124ce5ad5bc741a9628e
+odm/firmware/tp/21147/FW_FT3658U_SAMSUNG.img|f98cbdc0574fdb2eaf1f5412b4dac35c3a988fda
+odm/firmware/tp/21147/FW_FT3658U_SAMSUNG_FAE.img|e9583d0254d92b22211b1923ebd2fe27ec45ac95
+odm/firmware/tp/21147/LIMIT_FT3658U_SAMSUNG.img|f759aa9f4b69b1b70dcd0184b532c677b3698859
+odm/firmware/tp/21617/FW_FT3658U_SAMSUNG.img|788b739d1eb4340d6a8404e4c572b032b5582e66
+odm/firmware/tp/21617/FW_FT3658U_SAMSUNG_FAE.img|436ba8916e639a549a0bc4d8b847da57aad875c0
+odm/firmware/tp/21617/LIMIT_FT3658U_SAMSUNG.img|15c633d9a18e4028eeb0edf399730b333dbaae8c
+
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
@@ -638,6 +916,30 @@ vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/vendor.qti.hardware.vpp@2.0.so
+
+# VPU - OOS
+vendor/firmware/vpu20_4v.b01|345701d3a9428f357e369903a614d8e16e53f141
+vendor/firmware/vpu20_4v.b02|2756850def9b5d077cc285ace8feed8896a6526e
+vendor/firmware/vpu20_4v.b03|7772b18b16e520641e8051fd6284384e9b0e1939
+vendor/firmware/vpu20_4v.b04|7b902e71e9d71fa576a278e76d5c83bedfac9ac4
+vendor/firmware/vpu20_4v.b05|f726e7fa233485e02ef6172833d51353627aa81d
+vendor/firmware/vpu20_4v.b06|e19854e03b52cc67d7db620f54609b66d1b85f54
+vendor/firmware/vpu20_4v.b07|0b403b94f400e8f76ac5f5f18f6957318ec2a582
+vendor/firmware/vpu20_4v.b08|86a5ed4d22759036806d9321f8e509628f64c5b6
+vendor/firmware/vpu20_4v.b09|57c7ece95a1d520f685b7b4e60a7378885c2ca64
+vendor/firmware/vpu20_4v.b10|4194eb05369546bf608a4fa0ab947ae4f69cda01
+vendor/firmware/vpu20_4v.b11|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b12|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b13|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b14|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b15|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b17|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b18|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b19|c1756e0567d10a1173f481cd367ff4637b2dd77f
+vendor/firmware/vpu20_4v.mbn|792a4fe47686a0dd0cc442cd1d7fca7085db965b
+vendor/firmware/vpu20_4v.mdt|f74111864c5006d8c5aceb22e7353b679b2890dc
+vendor/firmware/vpu20_4v_unsigned.mbn|83429bfe2bf8fb8f19a9298a4ffc83594bbb8b90
 
 # WFD
 vendor/bin/wfdhdcphalservice
@@ -687,3 +989,18 @@ vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 # WLAN
 vendor/bin/cnss-daemon
+
+# WLAN - OOS
+odm/etc/wifi/cnss_diag_always_on.conf|7c8d94e909d88205adf3bdb428cb6a39f012cabc
+vendor/etc/wifi/p2p_supplicant_overlay.conf|05f22cd82cbe806d46185a3e5ce69c86cd307128
+vendor/etc/wifi/wpa_supplicant_overlay.conf|fd618998d3dcd4b3a408807fa629967c378ac45a
+
+# Widevine - OOS
+odm/bin/hw/android.hardware.drm@1.3-service.widevine|c86a66a295e46195c59a40e8c7d7ea3303f27b5e
+odm/etc/init/android.hardware.drm@1.3-service.widevine.rc|7801ccf2718b30ffac54c4beb88370726a4a86c6
+-odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+odm/lib64/mediadrm/libwvdrmengine.so|f971527c8a5d9ebc4300693836dfe70b93794dc0
+odm/lib64/liboemcrypto.so|82d4db9732576e0061d34deeabc27d19e84cd510
+odm/lib64/libwvhidl.so|7af922801252f0ab5daed2d5b0e50d74b3a1d49f
+vendor/etc/oplus_Widevine_licenses.pfm|3a24c9b4db3cb2625cd83c3b600ca9adf1998dcb
+vendor/lib64/libtrustedapploader.so|e57218f85b6eb5c8dd9809c768a11ab450fb3aa2
